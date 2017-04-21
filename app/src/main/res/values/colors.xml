@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="button_pressed">@android:color/black</color>
+    <color name="button_default">@android:color/holo_orange_dark</color>
+
+    <color name="button_text_pressed">@android:color/holo_orange_dark</color>
+    <color name="button_text_default">@android:color/black</color>
+
+    <color name="winner_color">@android:color/holo_green_dark</color>
+</resources>

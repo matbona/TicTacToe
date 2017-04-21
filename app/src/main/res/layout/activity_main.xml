@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="pl.mateuszbona.tictactoe.MainActivity">
+
+    <TextView
+        android:id="@+id/tvGameMessage"
+        style="@style/GameMessage"
+        android:layout_above="@+id/glGameBoard"
+        tools:text="@string/player_move" />
+
+    <GridLayout
+        android:id="@+id/glGameBoard"
+        style="@style/GameBoard"
+        android:columnCount="3"
+        android:rowCount="3">
+
+        <Button
+            android:id="@+id/btn00"
+            style="@style/Field"
+            android:layout_marginLeft="@dimen/field_margin_to_make_board"
+            android:layout_marginTop="@dimen/field_margin_to_make_board"
+            android:tag="0;0"
+            tools:text="@string/sample_player_sign" />
+
+        <Button
+            android:id="@+id/btn01"
+            style="@style/Field"
+            android:layout_marginTop="@dimen/field_margin_to_make_board"
+            android:tag="0;1"
+            tools:text="@string/sample_player_sign" />
+
+        <Button
+            android:id="@+id/btn02"
+            style="@style/Field"
+            android:layout_marginRight="@dimen/field_margin_to_make_board"
+            android:layout_marginTop="@dimen/field_margin_to_make_board"
+            android:tag="0;2"
+            tools:text="@string/sample_player_sign" />
+
+        <Button
+            android:id="@+id/btn10"
+            style="@style/Field"
+            android:layout_marginLeft="@dimen/field_margin_to_make_board"
+            android:tag="1;0"
+            tools:text="@string/sample_player_sign" />
+
+        <Button
+            android:id="@+id/btn11"
+            style="@style/Field"
+            android:tag="1;1"
+            tools:text="@string/sample_player_sign" />
+
+        <Button
+            android:id="@+id/btn12"
+            style="@style/Field"
+            android:layout_marginRight="@dimen/field_margin_to_make_board"
+            android:tag="1;2"
+            tools:text="@string/sample_player_sign" />
+
+        <Button
+            android:id="@+id/btn20"
+            style="@style/Field"
+            android:layout_marginBottom="@dimen/field_margin_to_make_board"
+            android:layout_marginLeft="@dimen/field_margin_to_make_board"
+            android:tag="2;0"
+            tools:text="@string/sample_player_sign" />
+
+        <Button
+            android:id="@+id/btn21"
+            style="@style/Field"
+            android:layout_marginBottom="@dimen/field_margin_to_make_board"
+            android:tag="2;1"
+            tools:text="@string/sample_player_sign" />
+
+        <Button
+            android:id="@+id/btn22"
+            style="@style/Field"
+            android:layout_marginBottom="@dimen/field_margin_to_make_board"
+            android:layout_marginRight="@dimen/field_margin_to_make_board"
+            android:tag="2;2"
+            tools:text="@string/sample_player_sign" />
+
+    </GridLayout>
+
+    <Button
+        android:id="@+id/btnNewGame"
+        style="@style/NewGameButton"
+        android:layout_below="@id/glGameBoard"
+        android:text="@string/new_game" />
+
+    <Button
+        android:id="@+id/btnLeaveGame"
+        style="@style/NewGameButton"
+        android:layout_marginTop="@dimen/menu_button_maring"
+        android:layout_below="@id/btnNewGame"
+        android:text="@string/leave_game" />
+</RelativeLayout>

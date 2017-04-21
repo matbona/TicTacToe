@@ -1,0 +1,64 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="GameMessage">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@android:color/holo_orange_dark</item>
+        <item name="android:layout_marginBottom">@dimen/new_game_button_margin</item>
+        <item name="android:textSize">@dimen/new_game_button_font_size</item>
+        <item name="android:textStyle">bold</item>
+        <!--<item name="android:fontFamily">casual</item>-->
+    </style>
+
+    <style name="GameBoard">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:background">@android:color/holo_orange_dark</item>
+    </style>
+
+    <style name="Field">
+        <item name="android:layout_width">@dimen/field_width</item>
+        <item name="android:layout_height">@dimen/field_height</item>
+        <item name="android:textSize">@dimen/sign_size</item>
+        <item name="android:background">@android:color/black</item>
+        <item name="android:textColor">@android:color/holo_orange_dark</item>
+        <item name="android:layout_margin">@dimen/field_margin</item>
+        <item name="android:textStyle">bold</item>
+        <!--<item name="android:fontFamily">serif-monospace</item>-->
+    </style>
+
+    <style name="NewGameButton">
+        <item name="android:layout_marginTop">@dimen/new_game_button_margin</item>
+        <item name="android:layout_width">@dimen/new_game_button_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:background">@drawable/button_bg_color</item>
+        <item name="android:textSize">@dimen/new_game_button_font_size</item>
+        <item name="android:textColor">@color/button_text_color</item>
+        <!--<item name="android:fontFamily">casual</item>-->
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="MenuButton">
+        <item name="android:layout_marginTop">@dimen/menu_button_maring</item>
+        <item name="android:layout_width">@dimen/new_game_button_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:background">@drawable/button_bg_color</item>
+        <item name="android:textSize">@dimen/new_game_button_font_size</item>
+        <item name="android:textColor">@color/button_text_color</item>
+        <!--<item name="android:fontFamily">casual</item>-->
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>

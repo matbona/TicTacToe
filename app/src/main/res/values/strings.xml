@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">TicTacToe</string>
+    <string name="winner_message">Wygrywa gracz %s!</string>
+    <string name="new_game">Nowa gra</string>
+    <string name="leave_game">Opuść grę</string>
+    <string name="player_move">Ruch gracza: %s</string>
+    <string name="sample_player_sign">X</string>
+    <string name="draw_message">Remis!</string>
+    <string name="options">Opcje</string>
+    <string name="exit">Wyjście</string>
+    <string name="about">O programie</string>
+</resources>

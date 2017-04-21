@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_options"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="@android:color/black"
+    tools:context="pl.mateuszbona.tictactoe.OptionsActivity">
+
+    <CheckBox
+        android:id="@+id/chbPlaySound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/holo_orange_dark"
+        android:text="Dźwięki w grze"
+        android:textSize="@dimen/new_game_button_font_size"
+        android:checked="true"
+        android:layout_marginBottom="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kto zaczyna grę?"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="@dimen/new_game_button_font_size"
+        android:layout_marginBottom="15dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="15dp">
+
+        <RadioGroup
+            android:id="@+id/beginningPlayerRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checkedButton="@+id/btnCross"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/btnCross"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/holo_orange_dark"
+                android:textSize="25sp"
+                android:text="Krzyżyk (X)" />
+
+            <RadioButton
+                android:id="@+id/btnCircle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/holo_orange_dark"
+                android:textSize="25sp"
+                android:text="Kółko (O)" />
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/chbComputerPlayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/holo_orange_dark"
+        android:text="Graj z komputerem"
+        android:textSize="@dimen/new_game_button_font_size"
+        android:checked="false"
+        android:layout_marginBottom="15dp"/>
+
+    <CheckBox
+        android:id="@+id/chbComputerPlayerStarts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/holo_orange_dark"
+        android:text="Komputer zaczyna jako pierwszy"
+        android:textSize="@dimen/new_game_button_font_size"
+        android:checked="false"
+        android:layout_marginBottom="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Poziom trudności:"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="@dimen/new_game_button_font_size"
+        android:layout_marginBottom="15dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/computerPlayerRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checkedButton="@+id/btnEasy"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15dp">
+
+            <RadioButton
+                android:id="@+id/btnEasy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/holo_orange_dark"
+                android:textSize="25sp"
+                android:text="Łatwy" />
+
+            <RadioButton
+                android:id="@+id/btnMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/holo_orange_dark"
+                android:textSize="25sp"
+                android:text="Średni" />
+
+            <RadioButton
+                android:id="@+id/btnHard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/holo_orange_dark"
+                android:enabled="false"
+                android:textSize="25sp"
+                android:text="Trudny" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSave"
+        style="@style/MenuButton"
+        android:text="Zapisz"
+        android:layout_gravity="center_horizontal"/>
+
+    <Button
+        android:id="@+id/btnBack"
+        style="@style/MenuButton"
+        android:text="Wyjdź"
+        android:layout_gravity="center_horizontal"/>
+</LinearLayout>
